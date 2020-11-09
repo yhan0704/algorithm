@@ -1,11 +1,12 @@
 
-let arr=[1,2,3,4,5,6,7,8,4,2,3,1,0]
+let arr=[1,1]
 
 function duplicated(arr){
   let obj={}
   let newarr=[]
 
   for(let i = 0; i < arr.length; i++){
+    console.log(Object.values(obj).indexOf(arr[i]) > -1)
     if(Object.values(obj).indexOf(arr[i]) > -1){
       continue
     }
